@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matriks</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Hitung Matrix</h1>
+    <div class="wrapper">
+        
+        <div class="container">
+            <h5>Pilih Operasi</h5>
+            <select name="operasi" id="operasi">
+                <option value="perkalian">Perkalian Matrix (A x B)</option>
+                <option value="invers">Invers Matrix</option>
+                <option value="persamaan">Persamaan Matrix</option>
+                <option value="determinan">Determinan 3x3</option>
+            </select>
+
+            <div class="uk-matrix">
+                <h5>Ukuran Matrix A</h5>
+                <select name="baris" id="baris-a">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                <span>x</span>
+                <select name="kolom" id="kolom-a">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+
+            <div class="uk-matrix">
+                <h5>Ukuran Matrix B</h5>
+                <select name="baris" id="baris-b">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                <span>x</span>
+                <select name="baris" id="baris-b">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+            <div class="btn-action">
+                <button id="buat-matrix">Buat Input Matrix</button>
+                <button id="hitung-perkalian" class="secondary">Hitung Perkalian</button>
+            </div>
+        </div>
+        
+
+
+        <div class="container">
+            <h5>Input Matrix</h5>
+            <div class="area-input" id="input-matrix"></div>
+            <div class="hasil-matrix">
+                <h5>Hasil</h5>
+                <pre id="tampil-hasil">--hasil akan muncul disini--</pre>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
